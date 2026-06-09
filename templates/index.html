@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Policy Impact Simulator</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-logo">
+        🌍 Policy Impact Simulator
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/simulator">Analyzer</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>📊 Policy Impact Simulator</h1>
+
+    <p class="subtitle">
+        Evaluate how proposed policies may affect different communities,
+        including marginalized and underrepresented groups.
+    </p>
+
+    <div class="card">
+
+        <h3>Policy Proposal</h3>
+
+        <textarea
+            id="policy"
+            placeholder="Example: Increase the national minimum wage to $20/hour"
+        ></textarea>
+
+    </div>
+
+    <button class="generate-btn" onclick="simulate()">
+        🔍 Analyze Policy Impact
+    </button>
+
+    <div id="result">
+
+        <div class="card placeholder-card">
+
+            <h3>Policy Analysis Results</h3>
+
+            <p>
+                Enter a policy proposal above and click
+                "Analyze Policy Impact" to see how different
+                communities may benefit or face challenges.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
